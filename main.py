@@ -14,7 +14,7 @@ import sys
 colors = ["#000", "#00f", "#0f0", "#0ff", "#f00", "#f0f", "#ff0", "#fff"]
 cell_size = 40
 sub_cell_size = 8
-grid_size = 3
+grid_size = int(sys.argv[1]) if len(sys.argv)==2 else 8
 cell_data = None
 grid = None
 move_count = 0
